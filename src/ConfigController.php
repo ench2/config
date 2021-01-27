@@ -21,8 +21,8 @@ class ConfigController
     public function index(Content $content)
     {
         return $content
-            ->header('Config')
-            ->description('list')
+            ->header(__('config.config'))
+            ->description(__('list'))
             ->body($this->grid());
     }
 
@@ -37,8 +37,8 @@ class ConfigController
     public function edit($id, Content $content)
     {
         return $content
-            ->header('Config')
-            ->description('edit')
+        ->header(__('config.config'))
+            ->description(__('edit'))
             ->body($this->form()->edit($id));
     }
 
@@ -52,16 +52,16 @@ class ConfigController
     public function create(Content $content)
     {
         return $content
-            ->header('Config')
-            ->description('create')
+            ->header(__('config.config'))
+            ->description(__('create'))
             ->body($this->form());
     }
 
     public function show($id, Content $content)
     {
         return $content
-            ->header('Config')
-            ->description('detail')
+            ->header(__('config.config'))
+            ->description(__('detail'))
             ->body(Admin::show(ConfigModel::findOrFail($id), function (Show $show) {
                 $show->id();
                 $show->name();
