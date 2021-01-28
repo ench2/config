@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Config;
+namespace Ench2\Config;
 
 use Encore\Admin\Admin;
 use Encore\Admin\Extension;

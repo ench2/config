@@ -1,6 +1,6 @@
 <?php
 
-namespace Encore\Admin\Config;
+namespace Ench2\Config;
 
 use Encore\Admin\Controllers\HasResourceActions;
 use Encore\Admin\Facades\Admin;
